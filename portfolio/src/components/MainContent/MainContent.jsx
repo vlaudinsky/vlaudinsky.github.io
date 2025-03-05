@@ -1,14 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import RadioGroup from '@mui/material/RadioGroup';
-import Radio from '@mui/material/Radio';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormLabel from '@mui/material/FormLabel';
 import { useColorScheme } from '@mui/material/styles';
-import { Button } from '@mui/material';
 
-function Header() {
+function MainContent() {
     const { mode, setMode } = useColorScheme();
     if (!mode) {
         return null;
@@ -27,12 +21,9 @@ function Header() {
                 minHeight: '56px',
             }}
         >
-            Violet
-            <Button>About</Button>
-            <Button>Skills</Button>
-            <Button>Contact</Button>
+            Main Content
         </Box>
     );
 }
-export default Header;
+export default MainContent;
 
