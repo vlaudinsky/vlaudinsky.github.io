@@ -1,16 +1,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material';
-import { useColorScheme } from '@mui/material/styles';
 
 function Skills() {
-    const { mode, setMode } = useColorScheme();
-    if (!mode) {
-        return null;
-    }
     return (
         <>
-            <Box
+            <Box id="#Skills"
                 sx={{
                     display: 'flex',
                     width: '100%',
@@ -46,6 +41,8 @@ function Skills() {
                         <Button>React</Button>
                         <Button>NextJS</Button>
                         <Button>Redux</Button>
+                        <Button>Ionic</Button>
+                        <Button>Angular</Button>
                     </Box>
             </Box>
             <Box
@@ -84,8 +81,8 @@ function Skills() {
                     Backend 
                     <Box>
                         <Button>.Net</Button>
-                        <Button>BootStrap</Button>
-                        <Button>Styled-Components</Button>
+                        <Button>Express</Button>
+                        <Button>MySQL</Button>
                     </Box>
             </Box>
             <Box
@@ -104,8 +101,8 @@ function Skills() {
                     Miscellaneous 
                     <Box>
                         <Button>Git</Button>
-                        <Button>BootStrap</Button>
-                        <Button>Styled-Components</Button>
+                        <Button>AWS</Button>
+                        <Button>Docker</Button>
                     </Box>
             </Box>
         </>
