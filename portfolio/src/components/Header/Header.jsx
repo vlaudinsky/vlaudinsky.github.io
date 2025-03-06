@@ -19,18 +19,26 @@ function Header() {
                 display: 'flex',
                 width: '100%',
                 alignItems: 'center',
-                justifyContent: 'center',
+                justifyContent: 'space-between',
                 bgcolor: 'background.default',
                 color: 'text.primary',
-                borderRadius: 1,
                 p: 3,
                 minHeight: '56px',
             }}
         >
-            Violet
-            <Button>About</Button>
-            <Button>Skills</Button>
-            <Button>Contact</Button>
+            <Box>
+                Violet
+            </Box>
+            <Box 
+                sx={{
+                display: 'flex',
+                width: '100%',
+                alignItems: 'flex-end',
+            }}>
+                <Button href='#About'>About</Button>
+                <Button href="#Skills">Skills</Button>
+                <Button href="#Contact">Contact</Button>
+            </Box>
         </Box>
     );
 }
