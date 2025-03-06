@@ -17,7 +17,6 @@ function Header() {
         <Box
             sx={{
                 display: 'flex',
-                width: '100%',
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 bgcolor: 'background.default',
@@ -32,8 +31,9 @@ function Header() {
             <Box 
                 sx={{
                 display: 'flex',
-                width: '100%',
-                alignItems: 'flex-end',
+                marginLeft:'auto',
+                marginRight:'0',
+                
             }}>
                 <Button href='#About'>About</Button>
                 <Button href="#Skills">Skills</Button>

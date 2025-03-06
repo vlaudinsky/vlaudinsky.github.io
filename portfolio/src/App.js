@@ -12,8 +12,10 @@ function App() {
 
     return (
         <ThemeProvider theme={theme} default="system">
-            <Header/>
-            <MainContent/>
+            <div>
+                <Header/>
+                <MainContent/>
+            </div>
         </ThemeProvider>
     );
 }

@@ -11,7 +11,6 @@ function Contact() {
         <Box
             sx={{
                 display: 'flex',
-                width: '100%',
                 alignItems: 'center',
                 justifyContent: 'center',
                 bgcolor: 'background.default',

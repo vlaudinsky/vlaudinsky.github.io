@@ -8,7 +8,6 @@ function Skills() {
             <Box id="#Skills"
                 sx={{
                     display: 'flex',
-                    width: '100%',
                     alignItems: 'center',
                     justifyContent: 'center',
                     bgcolor: 'background.default',
@@ -23,7 +22,6 @@ function Skills() {
             <Box
                 sx={{
                     display: 'flex',
-                    width: '100%',
                     alignItems: 'center',
                     justifyContent: 'center',
                     bgcolor: 'background.default',
@@ -48,7 +46,6 @@ function Skills() {
             <Box
                 sx={{
                     display: 'flex',
-                    width: '100%',
                     alignItems: 'center',
                     justifyContent: 'center',
                     bgcolor: 'background.default',
@@ -68,7 +65,6 @@ function Skills() {
             <Box
                 sx={{
                     display: 'flex',
-                    width: '100%',
                     alignItems: 'center',
                     justifyContent: 'center',
                     bgcolor: 'background.default',
@@ -88,7 +84,6 @@ function Skills() {
             <Box
                 sx={{
                     display: 'flex',
-                    width: '100%',
                     alignItems: 'center',
                     justifyContent: 'center',
                     bgcolor: 'background.default',

@@ -12,7 +12,6 @@ function About() {
             sx={{
                 display: 'flex',
                 flexDirection:"column",
-                width: '100%',
                 alignItems: 'center',
                 justifyContent: 'center',
                 bgcolor: 'background.default',
