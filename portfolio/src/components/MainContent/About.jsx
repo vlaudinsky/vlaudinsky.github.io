@@ -11,6 +11,7 @@ function About() {
         <Box
             sx={{
                 display: 'flex',
+                flexDirection:"column",
                 width: '100%',
                 alignItems: 'center',
                 justifyContent: 'center',

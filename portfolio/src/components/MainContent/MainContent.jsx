@@ -1,7 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { useColorScheme } from '@mui/material/styles';
-
+import About from './About';
+import Skills from './Skills';
+import Contact from './Contact';
 function MainContent() {
     const { mode, setMode } = useColorScheme();
     if (!mode) {
@@ -11,6 +13,7 @@ function MainContent() {
         <Box
             sx={{
                 display: 'flex',
+                flexDirection:"column",
                 width: '100%',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -21,7 +24,9 @@ function MainContent() {
                 minHeight: '56px',
             }}
         >
-            Main Content
+            <About></About>
+            <Skills></Skills>
+            <Contact></Contact>
         </Box>
     );
 }
