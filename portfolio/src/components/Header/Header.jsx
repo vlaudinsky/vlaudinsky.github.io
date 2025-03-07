@@ -1,18 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import RadioGroup from '@mui/material/RadioGroup';
-import Radio from '@mui/material/Radio';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormLabel from '@mui/material/FormLabel';
-import { useColorScheme } from '@mui/material/styles';
-import { Button } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
-function Header() {
-    const { mode, setMode } = useColorScheme();
-    if (!mode) {
-        return null;
-    }
+function Header(props) {
     return (
         <Box
             sx={{
@@ -23,6 +15,9 @@ function Header() {
                 color: 'text.primary',
                 p: 3,
                 minHeight: '56px',
+                position:'sticky',
+                zIndex:100,
+                top:0,
             }}
         >
             <Box>
@@ -33,11 +28,21 @@ function Header() {
                 display: 'flex',
                 marginLeft:'auto',
                 marginRight:'0',
-                
+
             }}>
-                <Button href='#About'>About</Button>
-                <Button href="#Skills">Skills</Button>
-                <Button href="#Contact">Contact</Button>
+                <Button href='#about'>About</Button>
+                <Button href="#skills">Skills</Button>
+                <Button href="#contact">Contact</Button>
+                {
+                    (props.isLightMode)?
+                <IconButton aria-label="Light Mode" onClick={()=>props.setIsLightMode(false)}>
+                    <LightModeIcon/>
+                </IconButton>
+                :
+                <IconButton aria-label="Dark Mode" onClick={()=>props.setIsLightMode(true)}>
+                    <BedtimeIcon />
+                </IconButton>
+                }
             </Box>
         </Box>
     );
